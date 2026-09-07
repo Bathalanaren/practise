@@ -9,6 +9,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      APP_NAME: MyGitProject
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -16,5 +19,6 @@ jobs:
       - name: Run test
         run: |
           echo "CI pipeline is running"
+        echo "Application:$APP_NAME"
           echo " Test completed successfully"
 
