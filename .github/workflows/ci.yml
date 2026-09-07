@@ -15,8 +15,6 @@ jobs:
 
       - name: Run test
         run: |
-          echo "CI pipeline is
-running"
-          echo " Test completed
-successfully"
+          echo "CI pipeline is running"
+          echo " Test completed successfully"
 
